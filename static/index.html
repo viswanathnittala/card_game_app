@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game App</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Path is correct if files are in the same folder -->
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to the Card Game App</h1>
+        <form id="gameForm">
+            <label for="players">Number of Players:</label>
+            <input type="number" id="players" name="players" min="1" value="4" required>
+
+            <label for="complexity">Complexity:</label>
+            <select id="complexity" name="complexity">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button type="submit">Get Game Instructions</button>
+        </form>
+        <div id="result">
+            <h2>Game Instructions:</h2>
+            <p id="instructions"></p>
+        </div>
+    </div>
+    <script src="/static/app.js"></script> <!-- Path is correct if files are in the same folder -->
+</body>
+</html>
